@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 
 export const List = () => {
 
-  const url = "http://localhost:4000";
+  const url = "https://super20backened.onrender.com";
   const [list, setlist] = useState([]);
 
   const fetchList = async () => {

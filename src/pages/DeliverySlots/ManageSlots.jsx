@@ -16,7 +16,7 @@ const ManageSlots = () => {
     const token = localStorage.getItem('token');
     try {
       
-      const res = await axios.get('http://localhost:4000/api/delivery-slots/available', {headers:{token}});
+      const res = await axios.get('https://super20backened.onrender.com/api/delivery-slots/available', {headers:{token}});
       console.log(res);
       setSlots(res.data);
     } catch (error) {
